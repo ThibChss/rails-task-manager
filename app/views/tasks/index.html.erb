@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-center my-5">My Tasks</h1>
+
+  <%= link_to '<i class="fa-solid fa-plus"></i> Add Task'.html_safe, new_task_path, class: 'btn new-task' %>
+
+  <div class="cards-index">
+    <% @tasks.each do |t| %>
+      <div class="card card-index py-3 align-items-center ps-3">
+        <h4 class="task-title-card"><%= link_to t.title, task_path(t), class: "text-decoration-none task-link" %></h4>
+        <a class="task-delete" data-turbo-method="delete" data-turbo-confirm="Do you want to delete this task?" href="/tasks/<%= t.id %>">
+          <i class="fas fa-trash-alt"></i>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>

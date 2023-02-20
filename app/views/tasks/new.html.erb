@@ -1,0 +1,18 @@
+<div class="container text-center my-5">
+  <h1 class="mb-5">Create a new task</h1>
+
+  <%= form_for(@task) do |t| %>
+    <div class="my-4">
+      <strong><%= t.label :title, 'TITLE', class: 'label-form' %></strong>
+      <%= t.text_field :title, placeholder: 'Flashcards', class: 'p-1' %>
+    </div>
+    <div class="my-4">
+      <strong><%= t.label :details, 'DETAILS', class: 'label-form' %></strong>
+      <%= t.text_field :details, placeholder: "It's important", class: 'p-1' %>
+    </div>
+    <div>
+      <%= t.submit 'Create', class: 'btn create-task me-2' %>
+      <%= link_to '<i class="fa-solid fa-house fa-xs"></i> Home'.html_safe, root_path, class: 'btn home-task ms-2' %>
+    </div>
+  <% end %>
+</div>

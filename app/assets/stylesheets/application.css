@@ -13,3 +13,118 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Passion+One:wght@400;700&display=swap');
+
+ body {
+  background-color: #F2E7D5;
+  font-family: 'Hind Madurai', sans-serif;
+ }
+
+ h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 60px;
+  color: #393E46;
+ }
+
+ .cards-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+ }
+
+ .card-index {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  text-align: center;
+  border: none;
+  background-color: #F7F7F7;
+  box-shadow: 0 4px 10px #393E463D;
+ }
+
+ .task-title-card {
+  margin-bottom: 0;
+ }
+
+ .task-link {
+  color: #393E46;
+  opacity: .8;
+  transition: .2s opacity ease-in-out;
+ }
+
+ .task-link:hover {
+  color: #393E46;
+  opacity: 1;
+ }
+
+ .task-delete {
+  color: #EB455F;
+  opacity: .6;
+  transition: .2s opacity ease-in-out;
+ }
+
+ .task-delete:hover {
+  color: #EB455F;
+  opacity: 1;
+ }
+
+ .new-task {
+  background-color: #6D9886;
+  color: #F2E7D5;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  transition: .2s opacity ease-in-out;
+ }
+
+ .new-task:hover {
+  opacity: 1;
+  color: #F2E7D5;
+ }
+
+ .edit-task, .create-task {
+  background-color: #6D9886;
+  color: #F2E7D5;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  transition: .2s opacity ease-in-out;
+  margin-bottom: 0;
+ }
+
+ .edit-task:hover, .create-task:hover {
+  opacity: 1;
+  color: #F2E7D5;
+ }
+
+ .home-task {
+  background-color: #79B4B7;
+  color: #F2E7D5;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  transition: .2s opacity ease-in-out;
+  margin-bottom: 0;
+ }
+
+ .home-task:hover {
+  opacity: 1;
+  color: #F2E7D5;
+ }
+
+ .check-task {
+  color: #6D9886;
+  vertical-align: middle;
+ }
+
+ .cross-task {
+  color: #EB455F9E;
+  vertical-align: middle;
+ }
+
+ .label-form {
+  width: 100px;
+ }
+
+ .edit-checkbox {
+  margin-right: 225px;
+ }
